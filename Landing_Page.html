@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#home">Pet Paradise</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero text-center text-light">
+        <div class="container">
+            <h1>Welcome to Pet Paradise</h1>
+            <p>Your one-stop shop for all things pet-related!</p>
+            <button class="btn btn-primary" onclick="scrollToSection('products')">Shop Now</button>
+        </div>
+    </header>
+
+    <!-- Featured Products Section -->
+    <section id="products" class="py-5">
+        <div class="container text-center">
+            <h2>Featured Products</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="product-card">
+                        <img src="dog-food.jpg" alt="Dog Food" class="img-fluid">
+                        <h3>Premium Dog Food</h3>
+                        <p>High-quality nutrition for your furry friend.</p>
+                        <button class="btn btn-danger">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-card">
+                        <img src="cat-toys.jpg" alt="Cat Toys" class="img-fluid">
+                        <h3>Fun Cat Toys</h3>
+                        <p>Keep your cat entertained for hours!</p>
+                        <button class="btn btn-danger">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-card">
+                        <img src="pet-bed.jpg" alt="Pet Bed" class="img-fluid">
+                        <h3>Cozy Pet Bed</h3>
+                        <p>Comfortable bed for all pets.</p>
+                        <button class="btn btn-danger">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="bg-light py-5">
+        <div class="container text-center">
+            <h2>Happy Customers</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <p>"Best pet store ever! My dog loves the food, and the toys are top-notch!"</p>
+                        <h4>- Sarah W.</h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <p>"Great quality products and fast shipping. Highly recommend!"</p>
+                        <h4>- John D.</h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <p>"Fantastic customer service, and my pets couldn't be happier."</p>
+                        <h4>- Emily K.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription Section -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get exclusive deals and updates straight to your inbox!</p>
+            <form>
+                <div class="input-group justify-content-center">
+                    <input type="email" class="form-control" placeholder="Enter your email" required>
+                    <div class="input-group-append">
+                        <button class="btn btn-danger" type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </form>
+            <div class="contact-info mt-4">
+                <p>Contact us: <strong>+1 234 567 890</strong></p>
+                <p>Email: <strong>info@petparadise.com</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-4">
+        <div class="container">
+            <p>&copy; 2024 Pet Paradise. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function scrollToSection(section) {
+            document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+
+</html>
